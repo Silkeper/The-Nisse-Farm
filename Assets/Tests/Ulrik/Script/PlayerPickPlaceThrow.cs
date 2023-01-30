@@ -8,11 +8,9 @@ public class PlayerPickPlaceThrow : MonoBehaviour
     private PlayerInput input;
     private PlacePointScript placePointScript;
 
-    private float currentThrowSpeed;
-    private float startThrowSpeed;
-    private float throwspeedDecay;
+    [SerializeField] private float throwSpeed = 20;
 
-    private float maxDistanceForObjectCeck = 3;
+    [SerializeField] private float maxDistanceForObjectCeck = 3;
     [SerializeField] private float PlaceRange = 30;
 
     private int itemHoldstate;
@@ -34,6 +32,7 @@ public class PlayerPickPlaceThrow : MonoBehaviour
         PickUp();
         HoldState();
         DirectionSave();
+        PlacePointRotation();
     }
 
     private void HoldState()
@@ -42,19 +41,36 @@ public class PlayerPickPlaceThrow : MonoBehaviour
         {
             case 1:
                 PickUp();
-                placePoint.GetComponent<SpriteRenderer>().enabled = false;
                 if(currentObject)
                 {
                     itemHoldstate = 2;
                 }
+                RaycastHit2D hitObject = Physics2D.Raycast(transform.position, directionVector, maxDistanceForObjectCeck, isObject);
+                if(hitObject)
+                {
+                    placePoint.GetComponent<SpriteRenderer>().material.color = Color.yellow;
+                }
+                else
+                {
+                    placePoint.GetComponent<SpriteRenderer>().material.color = Color.white;
+                }
                 break;
                 case 2:
+                Throw();
                 if (currentObject)
                 {
-                    placePoint.GetComponent<SpriteRenderer>().enabled = true;
-                    currentObject.GetComponent<Collider2D>().isTrigger = true;
+                    if (currentObject.GetComponent<ObjectScript>().isObjectTrigger == false)
+                    {
+                        currentObject.GetComponent<Collider2D>().isTrigger = false;
+
+                    }
+                    else
+                    {
+                        currentObject.GetComponent<Collider2D>().isTrigger = true;
+                    }
+                    
                     currentObject.transform.position = itemHoldPosition.position;
-                    PlacePointRotation();
+                    placePoint.GetComponent<SpriteRenderer>().material.color = Color.blue;
                 }
                 if(!currentObject)
                 {
@@ -72,10 +88,13 @@ public class PlayerPickPlaceThrow : MonoBehaviour
             Debug.DrawRay(transform.position, transform.up);
             
             RaycastHit2D hitObject = Physics2D.Raycast(transform.position, directionVector, maxDistanceForObjectCeck, isObject);
+            
+            if ( hitObject)
             {
                 print(hitObject.transform.gameObject.name);
                 currentObject = hitObject.transform.gameObject;
-                
+                currentObject.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
+
             }
         } 
     }
@@ -83,8 +102,21 @@ public class PlayerPickPlaceThrow : MonoBehaviour
     {
         if (input.PlaceValue || input.ThrowValue && currentObject)
         {
-            //placePointScript.PlacePositionDirectionSetter();
             currentObject.transform.position = placePoint.position;
+            currentObject = null;
+            
+        }
+
+    }
+
+    private void Throw()
+    {
+        if(input.ThrowValue)
+        {
+            currentObject.transform.position = placePoint.position;
+            currentObject.GetComponent<ObjectScript>().ObjectDirectionVector = directionVector.normalized;
+            currentObject.GetComponent<ObjectScript>().isThrown = true;
+            currentObject.GetComponent<ObjectScript>().currentThrowSpeed = currentObject.GetComponent<ObjectScript>().ThrowSpeed;
             currentObject = null;
         }
     }
@@ -109,4 +141,5 @@ public class PlayerPickPlaceThrow : MonoBehaviour
     {
         placePoint.transform.localPosition = directionVector.normalized * PlaceRange;
     }
+
 }
