@@ -626,11 +626,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 946714a5825b2cf46b9f8e350f06c69d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Navn:
-  - Gjetergutt
+  Navn: 
   Dialog:
   - "JIHUU! S\xE5 rask du er! Dette vil Budeia like."
   - "Tipp topp! Juhu! F\xF8lg meg, s\xE5 skal vi fiske! "
+  Lyd: {fileID: 8300000, guid: 29234139943a647f5a2a16ab9035ba03, type: 3}
 --- !u!212 &24564338
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -780,9 +780,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 946714a5825b2cf46b9f8e350f06c69d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Navn:
-  - 
+  Navn: 
   Dialog: []
+  Lyd: {fileID: 0}
 --- !u!1 &88448415
 GameObject:
   m_ObjectHideFlags: 0
@@ -11899,10 +11899,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 946714a5825b2cf46b9f8e350f06c69d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Navn:
-  - Rasmus
+  Navn: 
   Dialog:
   - Woofwoof!
+  Lyd: {fileID: 8300000, guid: 168c2dd7b2a674f06bdc3cb4bdd21510, type: 3}
 --- !u!1 &645391026
 GameObject:
   m_ObjectHideFlags: 0
@@ -11948,8 +11948,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 946714a5825b2cf46b9f8e350f06c69d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Navn:
-  - Gartneren
+  Navn: 
   Dialog:
   - "Nei, j\xF8ss! Ungt blod p\xE5 tunet? "
   - "Hyggelig \xE5 hilse p\xE5 deg! Kall meg Gisle. Men nok sm\xE5prat, det f\xE5r
@@ -11959,6 +11958,7 @@ MonoBehaviour:
     f\xF8r, eller skal jeg l\xE6re deg? "
   - "Det er s\xE5re enkelt. Du plukker opp kjeppen og kaster den p\xE5 jalape\xF1o\u2019n.
     Dette f\xE5rru til!:)"
+  Lyd: {fileID: 8300000, guid: d24db81c3064b4b8d880df2322a48e72, type: 3}
 --- !u!212 &645391029
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15376,10 +15376,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 946714a5825b2cf46b9f8e350f06c69d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Navn:
-  - Budeie
+  Navn: 
   Dialog:
   - "Du er en kl\xF8pper en, du!"
+  Lyd: {fileID: 8300000, guid: 8c6bfc2d209da4549b65afc8429c5c5a, type: 3}
 --- !u!212 &880094861
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18723,10 +18723,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 946714a5825b2cf46b9f8e350f06c69d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Navn:
-  - Gubben
+  Navn: 
   Dialog:
   - '*grynt*'
+  Lyd: {fileID: 8300000, guid: 61bb6b95d65634e7cbf43b518cc07ba6, type: 3}
 --- !u!1 &974420585
 GameObject:
   m_ObjectHideFlags: 0
@@ -18908,8 +18908,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 946714a5825b2cf46b9f8e350f06c69d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Navn:
-  - Budeie
+  Navn: 
   Dialog:
   - "Heisann, din pjokk! Du er sein, men det g\xE5r s\xE5 fint s\xE5! Mitt namn er
     Brita, jeg er budeien her til gards. ja.. alts\xE5 sjefen. "
@@ -18935,6 +18934,7 @@ MonoBehaviour:
     stort som foreg\xE5r der borte.. "
   - "G\xE5 og legg frar\xE6 i hytta du, s\xE5 skal du straks f\xE5 begynne p\xE5
     arbetet. "
+  Lyd: {fileID: 8300000, guid: 2449891800ca949d28b9e44dac8f8663, type: 3}
 --- !u!1 &1214977791
 GameObject:
   m_ObjectHideFlags: 0
@@ -19368,10 +19368,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 946714a5825b2cf46b9f8e350f06c69d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Navn:
-  - Sau?
+  Navn: 
   Dialog:
   - Psst, hei du..!
+  Lyd: {fileID: 8300000, guid: c75fd098fe603468ab6bffb76cc0b962, type: 3}
 --- !u!1 &1364538815
 GameObject:
   m_ObjectHideFlags: 0
@@ -24825,14 +24825,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 946714a5825b2cf46b9f8e350f06c69d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Navn:
-  - Gjetergutt
+  Navn: 
   Dialog:
   - Jihu!
   - "Hva st\xE5r du her som en evneveik for? Tror du g\xE5rden steller seg selv! "
   - "Uansett hva du tror, m\xE5 du legge inn en innsats om du skal overleve her!"
   - "Ta en tur til gartneren, du, s\xE5 skal du f\xE5 gj\xF8re din f\xF8rste oppgave
     her p\xE5 g\xE5rd\u2019n! Jihu! "
+  Lyd: {fileID: 8300000, guid: 29234139943a647f5a2a16ab9035ba03, type: 3}
 --- !u!1 &1409608357
 GameObject:
   m_ObjectHideFlags: 0
@@ -105786,10 +105786,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 946714a5825b2cf46b9f8e350f06c69d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Navn:
-  - Gartneren
+  Navn: 
   Dialog:
   - 'Takk for hjelpen, det trengte jeg!  '
+  Lyd: {fileID: 8300000, guid: bd298c2c858f54402826f8a4442f3e7a, type: 3}
 --- !u!212 &1816685221
 SpriteRenderer:
   m_ObjectHideFlags: 0
