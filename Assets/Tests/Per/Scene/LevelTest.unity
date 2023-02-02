@@ -11902,7 +11902,7 @@ MonoBehaviour:
   Navn:
   - Rasmus
   Dialog:
-  - "Woff. (halla, hvor er du p\xE5 spekteret... Det politiske spekteret))"
+  - Woofwoof!
 --- !u!1 &645391026
 GameObject:
   m_ObjectHideFlags: 0
@@ -24843,7 +24843,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1409608359}
   - component: {fileID: 1409608358}
-  - component: {fileID: 1409608360}
   m_Layer: 0
   m_Name: Protagonist-armer-nede
   m_TagString: Untagged
@@ -24918,23 +24917,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1409608360
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1409608357}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 946714a5825b2cf46b9f8e350f06c69d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Navn:
-  - Frans
-  Dialog:
-  - Hei, jeg heter Frans!
-  - Hva heter du?
 --- !u!1 &1431293084
 GameObject:
   m_ObjectHideFlags: 0
