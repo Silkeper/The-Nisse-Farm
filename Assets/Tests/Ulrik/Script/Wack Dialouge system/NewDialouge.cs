@@ -15,7 +15,7 @@ public class NewDialouge : MonoBehaviour
     [SerializeField] private float textSpeed;
 
     private AudioSource audio;
-    [SerializeField] private AudioClip sans;
+    [HideInInspector] public AudioClip soundClip;
 
     private Vector3 activeposition;
     private Vector3 notActivePosition;
@@ -56,6 +56,7 @@ public class NewDialouge : MonoBehaviour
             {
                 StopAllCoroutines();
                 textMesh.text = dialouge[index];
+                
             }
         }
     }
@@ -76,7 +77,7 @@ public class NewDialouge : MonoBehaviour
     {
         foreach (var c in dialouge[index].ToCharArray())
         {
-            audio.PlayOneShot(sans);
+            audio.PlayOneShot(soundClip);
             textMesh.text += c;
             yield return new WaitForSeconds(textSpeed);
         }
@@ -93,6 +94,7 @@ public class NewDialouge : MonoBehaviour
         else
         {
             transform.localScale = new Vector3(0, 0, 0);
+            GameObject.Find("Vetle").GetComponent<PlayerStates>().playerStates = 0;
         }
     }
 }

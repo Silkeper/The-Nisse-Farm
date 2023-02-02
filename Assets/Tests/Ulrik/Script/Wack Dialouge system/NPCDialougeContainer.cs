@@ -6,6 +6,7 @@ public class NPCDialougeContainer : MonoBehaviour
 {
     public string[] Navn;
     public string[] Dialog;
+    public AudioClip Lyd;
 
     //Dialog systemet vil fungere slik:
     //Player Interact scriptet henter strings ifra dette scriptet, gir det over til Scruben imens den aktiverer en funskjon på Scruben

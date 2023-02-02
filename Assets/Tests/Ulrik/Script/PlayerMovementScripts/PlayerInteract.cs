@@ -6,6 +6,7 @@ public class PlayerInteract : MonoBehaviour
 {
     private PlayerInput input;
     private PlayerStates state;
+    private Rigidbody2D rb;
 
     public Vector2 directionVector;
     private float interactRadius;
@@ -15,10 +16,12 @@ public class PlayerInteract : MonoBehaviour
 
     public string[] currentNPCSpeaker;
     public string[] currentNPCDialouge;
+    public AudioClip currentNPCAudio;
     private void Start()
     {
         input = GetComponent<PlayerInput>();
         state = GetComponent<PlayerStates>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
     private void Update()
@@ -30,7 +33,7 @@ public class PlayerInteract : MonoBehaviour
     private void Talk()
     {
         
-        if(input.InteractValue)
+        if(input.InteractValue && state.playerStates == 0)
         {
             
             RaycastHit2D hitNPC = Physics2D.Raycast(transform.position, directionVector, maxDistanceForNPCCheck, isNPC);
@@ -39,13 +42,17 @@ public class PlayerInteract : MonoBehaviour
                 print(hitNPC.transform.gameObject.name);
                 currentNPCDialouge = hitNPC.transform.gameObject.GetComponent<NPCDialougeContainer>().Dialog;
                 currentNPCSpeaker = hitNPC.transform.gameObject.GetComponent<NPCDialougeContainer>().Navn;
+                currentNPCAudio = hitNPC.transform.gameObject.GetComponent<NPCDialougeContainer>().Lyd;
                 DialougeGetScrub.StartDialouge();
+                state.playerStates = 1;
+                rb.velocity = Vector2.zero;
             }
             else
             {
                 currentNPCDialouge = null;
                 currentNPCSpeaker = null;
-            }
+                currentNPCAudio = null;
+}
         }
     }
 }

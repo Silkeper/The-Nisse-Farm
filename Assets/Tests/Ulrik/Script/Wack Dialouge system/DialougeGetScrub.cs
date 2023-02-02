@@ -12,7 +12,9 @@ public class DialougeGetScrub : ScriptableObject
     {
         GameObject.Find("DialougeBox").GetComponent<NewDialouge>().dialouge = GameObject.Find("Vetle").GetComponent<PlayerInteract>().currentNPCDialouge;
         GameObject.Find("DialougeBox").GetComponent<NewDialouge>().speaker = GameObject.Find("Vetle").GetComponent<PlayerInteract>().currentNPCSpeaker;
+        GameObject.Find("DialougeBox").GetComponent<NewDialouge>().soundClip = GameObject.Find("Vetle").GetComponent<PlayerInteract>().currentNPCAudio;
 
         GameObject.Find("DialougeBox").GetComponent<NewDialouge>().AlmostStartDialouge();
+
     }
 }
