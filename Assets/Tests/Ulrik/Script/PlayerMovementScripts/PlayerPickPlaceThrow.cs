@@ -19,6 +19,7 @@ public class PlayerPickPlaceThrow : MonoBehaviour
 
     [SerializeField] private Transform placePoint;
     [SerializeField] private LayerMask isObject;
+    [SerializeField] private LayerMask isNPC;
     private GameObject currentObject;
     [SerializeField] private Transform itemHoldPosition;
     private void Start()
@@ -46,9 +47,14 @@ public class PlayerPickPlaceThrow : MonoBehaviour
                     itemHoldstate = 2;
                 }
                 RaycastHit2D hitObject = Physics2D.Raycast(transform.position, directionVector, maxDistanceForObjectCeck, isObject);
-                if(hitObject)
+                RaycastHit2D hitNPC = Physics2D.Raycast(transform.position, directionVector, maxDistanceForObjectCeck, isNPC);
+                if (hitObject)
                 {
                     placePoint.GetComponent<SpriteRenderer>().material.color = Color.yellow;
+                }
+                else if(hitNPC)
+                {
+                    placePoint.GetComponent<SpriteRenderer>().material.color = Color.blue;
                 }
                 else
                 {
@@ -70,7 +76,7 @@ public class PlayerPickPlaceThrow : MonoBehaviour
                     }
                     
                     currentObject.transform.position = itemHoldPosition.position;
-                    placePoint.GetComponent<SpriteRenderer>().material.color = Color.blue;
+                    placePoint.GetComponent<SpriteRenderer>().material.color = Color.red;
                 }
                 if(!currentObject)
                 {

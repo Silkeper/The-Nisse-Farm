@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using Unity.VisualScripting.FullSerializer;
 using UnityEngine;
 
 public class DialougeGetScrub : ScriptableObject
@@ -16,5 +17,6 @@ public class DialougeGetScrub : ScriptableObject
 
         GameObject.Find("DialougeBox").GetComponent<NewDialouge>().AlmostStartDialouge();
 
+        
     }
 }

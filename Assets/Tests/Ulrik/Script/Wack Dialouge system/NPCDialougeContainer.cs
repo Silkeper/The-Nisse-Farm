@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class NPCDialougeContainer : MonoBehaviour
 {
-    public string[] Navn;
+    public string Navn;
     public string[] Dialog;
     public AudioClip Lyd;
 

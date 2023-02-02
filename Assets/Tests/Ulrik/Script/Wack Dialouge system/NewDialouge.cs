@@ -11,7 +11,7 @@ public class NewDialouge : MonoBehaviour
     [SerializeField] private TextMeshProUGUI textMesh;
     [SerializeField] private TextMeshProUGUI speakerText;
     [HideInInspector] public string[] dialouge;
-    [HideInInspector] public string[] speaker;
+    [HideInInspector] public string speaker;
     [SerializeField] private float textSpeed;
 
     private AudioSource audio;
@@ -29,7 +29,7 @@ public class NewDialouge : MonoBehaviour
         transform = GetComponent<RectTransform>();
         activeposition = new Vector3(0, 0, 0);
         notActivePosition = new Vector3(0, 0, 0);
-        speakerText.text = speaker[index];
+        speakerText.text = string.Empty;
         input = GetComponent<PlayerInput>();
         audio = GetComponent<AudioSource>();
 
@@ -38,7 +38,7 @@ public class NewDialouge : MonoBehaviour
     }
     private void OnEnable()
     {
-        speakerText.text = speaker[index];
+        speakerText.text = speaker;
         input = GetComponent<PlayerInput>();
         audio = GetComponent<AudioSource>();
 
@@ -70,8 +70,9 @@ public class NewDialouge : MonoBehaviour
         transform.localScale =  new Vector3(2.4125f, 1, 1);
         index = 0;
         StartCoroutine(TypeLine());
-        print(dialouge);
+        //print(dialouge);
         print(speaker);
+        speakerText.text = speaker.ToString();
     }
 
     IEnumerator TypeLine()

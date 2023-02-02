@@ -27,7 +27,6 @@ public class PlayerStates : MonoBehaviour
                 break;
 
             case 1:
-                print("Wow talk no move");
                 break;
         }
     }

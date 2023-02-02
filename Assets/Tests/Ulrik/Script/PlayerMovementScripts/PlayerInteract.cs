@@ -12,9 +12,9 @@ public class PlayerInteract : MonoBehaviour
     private float interactRadius;
     [SerializeField] private LayerMask isNPC;
 
-    private float maxDistanceForNPCCheck = 3;
+    [SerializeField] private float maxDistanceForNPCCheck = 3;
 
-    public string[] currentNPCSpeaker;
+    public string currentNPCSpeaker;
     public string[] currentNPCDialouge;
     public AudioClip currentNPCAudio;
     private void Start()
@@ -27,7 +27,11 @@ public class PlayerInteract : MonoBehaviour
     private void Update()
     {
         Talk();
+        if(input.MoveVector != Vector2.zero)
+        {
+
         directionVector = input.MoveVector.normalized;
+        }
     }
 
     private void Talk()
