@@ -1316,7 +1316,7 @@ MonoBehaviour:
   Dialog:
   - Ayo Vetle!
   - Lets'a go!
-  Lyd: {fileID: 0}
+  Lyd: {fileID: 8300000, guid: f927fcd594c50684ca0ea3ad5dd129a1, type: 3}
 --- !u!1 &1944789820
 GameObject:
   m_ObjectHideFlags: 0

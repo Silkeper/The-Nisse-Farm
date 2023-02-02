@@ -66,6 +66,7 @@ public class NewDialouge : MonoBehaviour
     }
     public void StartDialouge()
     {
+        audio.PlayOneShot(soundClip);
         transform.localScale =  new Vector3(2.4125f, 1, 1);
         index = 0;
         StartCoroutine(TypeLine());
@@ -77,7 +78,7 @@ public class NewDialouge : MonoBehaviour
     {
         foreach (var c in dialouge[index].ToCharArray())
         {
-            audio.PlayOneShot(soundClip);
+            
             textMesh.text += c;
             yield return new WaitForSeconds(textSpeed);
         }
@@ -87,6 +88,7 @@ public class NewDialouge : MonoBehaviour
     {
         if (index < dialouge.Length - 1)
         {
+            audio.PlayOneShot(soundClip);
             index++;
             textMesh.text = string.Empty;
             StartCoroutine(TypeLine());
