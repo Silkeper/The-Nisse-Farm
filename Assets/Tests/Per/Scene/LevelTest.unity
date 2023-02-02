@@ -581,6 +581,108 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &24564335
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 24564336}
+  - component: {fileID: 24564338}
+  - component: {fileID: 24564337}
+  m_Layer: 0
+  m_Name: Gjetergutt - Copy2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &24564336
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 24564335}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -12.999449, y: -1.8544159, z: 0.07155509}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 812330389}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &24564337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 24564335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 946714a5825b2cf46b9f8e350f06c69d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Navn:
+  - Gjetergutt
+  Dialog:
+  - "JIHUU! S\xE5 rask du er! Dette vil Budeia like."
+  - "Tipp topp! Juhu! F\xF8lg meg, s\xE5 skal vi fiske! "
+--- !u!212 &24564338
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 24564335}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 57b2b08a40dd6234aaa3a78eef709700, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 6.4, y: 6.4}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &75315653
 GameObject:
   m_ObjectHideFlags: 0
@@ -593,7 +695,7 @@ GameObject:
   - component: {fileID: 75315655}
   - component: {fileID: 75315656}
   m_Layer: 0
-  m_Name: Chiken
+  m_Name: Chicken
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11801,6 +11903,114 @@ MonoBehaviour:
   - Rasmus
   Dialog:
   - "Woff. (halla, hvor er du p\xE5 spekteret... Det politiske spekteret))"
+--- !u!1 &645391026
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 645391027}
+  - component: {fileID: 645391029}
+  - component: {fileID: 645391028}
+  m_Layer: 0
+  m_Name: gartner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &645391027
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 645391026}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 5.5344453, y: -7.2986183, z: 0.07155509}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 812330389}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &645391028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 645391026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 946714a5825b2cf46b9f8e350f06c69d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Navn:
+  - Gartneren
+  Dialog:
+  - "Nei, j\xF8ss! Ungt blod p\xE5 tunet? "
+  - "Hyggelig \xE5 hilse p\xE5 deg! Kall meg Gisle. Men nok sm\xE5prat, det f\xE5r
+    vi ta over kaffen til kvelds. Du er vel ikke fremmed for \xE5 ta den med en skvett
+    Bailey\u2019s? "
+  - "Uansett: jeg trenger hjelp med avlingene. Har du v\xE6rt borti jalape\xF1o-h\xF8sting
+    f\xF8r, eller skal jeg l\xE6re deg? "
+  - "Det er s\xE5re enkelt. Du plukker opp kjeppen og kaster den p\xE5 jalape\xF1o\u2019n.
+    Dette f\xE5rru til!:)"
+--- !u!212 &645391029
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 645391026}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: bafa85d6085c14c9ca67a7e3ef7a7f1f, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 6.4, y: 6.4}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &680807744
 GameObject:
   m_ObjectHideFlags: 0
@@ -14946,6 +15156,10 @@ Transform:
   - {fileID: 75315654}
   - {fileID: 1350121355}
   - {fileID: 1030450234}
+  - {fileID: 880094859}
+  - {fileID: 645391027}
+  - {fileID: 1816685219}
+  - {fileID: 24564336}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -15117,6 +15331,107 @@ Transform:
   m_Father: {fileID: 950970512}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &880094858
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 880094859}
+  - component: {fileID: 880094861}
+  - component: {fileID: 880094860}
+  m_Layer: 0
+  m_Name: Budeie2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &880094859
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 880094858}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -11.365555, y: -8.258617, z: 0.07155509}
+  m_LocalScale: {x: 0.66678, y: 0.66678, z: 0.66678}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 812330389}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &880094860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 880094858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 946714a5825b2cf46b9f8e350f06c69d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Navn:
+  - Budeie
+  Dialog:
+  - "Du er en kl\xF8pper en, du!"
+--- !u!212 &880094861
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 880094858}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 15
+  m_Sprite: {fileID: 21300000, guid: 3717449c5f10f9041ac88eb87bcacb11, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 6.4, y: 6.4}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &906968586
 GameObject:
   m_ObjectHideFlags: 0
@@ -18596,7 +18911,30 @@ MonoBehaviour:
   Navn:
   - Budeie
   Dialog:
-  - "V\xE6r hilset, fremmed!"
+  - "Heisann, din pjokk! Du er sein, men det g\xE5r s\xE5 fint s\xE5! Mitt namn er
+    Brita, jeg er budeien her til gards. ja.. alts\xE5 sjefen. "
+  - "Storbonden er utbrent blitt s\xE5 han har dratt til syden og.. det er litt f\xE5
+    hender her til hjelp..fullt kaos. ja. Uansett. "
+  - "Det er masse \xE5 ordne til festen! Ja tenk, det er hundre\xE5rsjubileum for
+    denne stor festen her p\xE5 gards. "
+  - "Jeg har fullt av oppgaver til deg, men f\xF8rst kan jeg vise deg rundt.  "
+  - "Her har du l\xE5ven. Der lages maten og det er der den store festen skal holdes."
+  - "Og her bor ogs\xE5 jeg og gubben som du ser der borte. Han gj\xF8r ikke stort,
+    ikke bry deg om ham. "
+  - "Det du ser her er \xE5kern v\xE5r - her stuller og steller gartneren med sitt.
+    Det ser ut som om han kan trenge en hjelpende h\xE5nd i blant! "
+  - "Der ser du dammen v\xE5r. Den er full av torsk! Der ser du dammen v\xE5r. Den
+    er full av torsk! "
+  - 'Eller.. gjedde kanskje. Saltvatn, boblevatn, stillvatn, ser det ut som jeg bryr
+    meg? '
+  - "Bekymringer har jeg nok av m\xE5 du vite! Videre! "
+  - 'Her ser du hytta di. Her skal du bo. Der finnes en seng og skuffer og dill og
+    dall.  '
+  - "Men du\u2026! Ikke finn p\xE5 \xE5 g\xE5 n\xE6r stabburet!"
+  - "Det er s\xE5 stygt og falleferdig..hehe, skal du vite! Det renoveres. Ja. Intet
+    stort som foreg\xE5r der borte.. "
+  - "G\xE5 og legg frar\xE6 i hytta du, s\xE5 skal du straks f\xE5 begynne p\xE5
+    arbetet. "
 --- !u!1 &1214977791
 GameObject:
   m_ObjectHideFlags: 0
@@ -24416,7 +24754,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1370992164}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -12.999449, y: -1.8544159, z: 0.07155509}
+  m_LocalPosition: {x: -16.04, y: -1.8544159, z: 0.07155509}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -24491,6 +24829,10 @@ MonoBehaviour:
   - Gjetergutt
   Dialog:
   - Jihu!
+  - "Hva st\xE5r du her som en evneveik for? Tror du g\xE5rden steller seg selv! "
+  - "Uansett hva du tror, m\xE5 du legge inn en innsats om du skal overleve her!"
+  - "Ta en tur til gartneren, du, s\xE5 skal du f\xE5 gj\xF8re din f\xF8rste oppgave
+    her p\xE5 g\xE5rd\u2019n! Jihu! "
 --- !u!1 &1409608357
 GameObject:
   m_ObjectHideFlags: 0
@@ -105417,6 +105759,107 @@ Transform:
   m_Father: {fileID: 950970512}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1816685218
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1816685219}
+  - component: {fileID: 1816685221}
+  - component: {fileID: 1816685220}
+  m_Layer: 0
+  m_Name: gartner2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1816685219
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1816685218}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 8.35, y: -7.35, z: 0.07155509}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 812330389}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1816685220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1816685218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 946714a5825b2cf46b9f8e350f06c69d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Navn:
+  - Gartneren
+  Dialog:
+  - 'Takk for hjelpen, det trengte jeg!  '
+--- !u!212 &1816685221
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1816685218}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: bafa85d6085c14c9ca67a7e3ef7a7f1f, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 6.4, y: 6.4}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1828172959
 GameObject:
   m_ObjectHideFlags: 0
