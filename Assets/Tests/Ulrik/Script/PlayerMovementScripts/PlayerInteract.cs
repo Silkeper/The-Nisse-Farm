@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerInteract : MonoBehaviour
 {
     private PlayerInput input;
+    private PlayerStates state;
 
     public Vector2 directionVector;
     private float interactRadius;
@@ -17,6 +18,7 @@ public class PlayerInteract : MonoBehaviour
     private void Start()
     {
         input = GetComponent<PlayerInput>();
+        state = GetComponent<PlayerStates>();
     }
 
     private void Update()

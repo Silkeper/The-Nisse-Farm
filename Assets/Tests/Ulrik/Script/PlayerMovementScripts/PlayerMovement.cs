@@ -6,6 +6,7 @@ using static UnityEngine.RuleTile.TilingRuleOutput;
 public class PlayerMovement : MonoBehaviour
 { 
     private PlayerInput input;
+    private PlayerStates state;
  [Tooltip("The acceleration and max moveSpeed of the player character")]
         [SerializeField] private float moveSpeed = 7f;
 private float _movementMultiplier = 10f; // a multiplier to the moveSpeed in order to keep the numbers relatively low and manageable
@@ -17,12 +18,18 @@ private Rigidbody2D rb;
     private void Start()
     {
         input = GetComponent<PlayerInput>();
+        state = GetComponent<PlayerStates>();
+
         rb = GetComponent<Rigidbody2D>();
     }
     private void FixedUpdate()
 {
-    MoveMain();
-    Drag(); // in fixed update to keep it moving at the same speed as the physicsSteps
+        if(state.playerStates == 0)
+        {
+            MoveMain();
+            Drag(); // in fixed update to keep it moving at the same speed as the physicsSteps
+        }
+    
 }
 private void Drag()
 {
