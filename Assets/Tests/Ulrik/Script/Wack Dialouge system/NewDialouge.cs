@@ -3,54 +3,78 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEditor;
+using System.Xml.Serialization;
 
 public class NewDialouge : MonoBehaviour
 {
     private PlayerInput input;
     [SerializeField] private TextMeshProUGUI textMesh;
     [SerializeField] private TextMeshProUGUI speakerText;
-    [SerializeField] private string[] lines;
-    [SerializeField] private string[] speaker;
+    [HideInInspector] public string[] dialouge;
+    [HideInInspector] public string[] speaker;
     [SerializeField] private float textSpeed;
 
     private AudioSource audio;
     [SerializeField] private AudioClip sans;
 
+    private Vector3 activeposition;
+    private Vector3 notActivePosition;
+
+    private RectTransform transform;
+
     private int index;
 
     private void Start()
+    {
+        transform = GetComponent<RectTransform>();
+        activeposition = new Vector3(0, 0, 0);
+        notActivePosition = new Vector3(0, 0, 0);
+        speakerText.text = speaker[index];
+        input = GetComponent<PlayerInput>();
+        audio = GetComponent<AudioSource>();
+
+        textMesh.text = string.Empty;
+        transform.localScale = new Vector3(0, 0, 0);
+    }
+    private void OnEnable()
     {
         speakerText.text = speaker[index];
         input = GetComponent<PlayerInput>();
         audio = GetComponent<AudioSource>();
 
         textMesh.text = string.Empty;
-        StartDialouge();
     }
     private void Update()
     {
         if(input.InteractValue)
         {
-            if(textMesh.text == lines[index])
+            if(textMesh.text == dialouge[index])
             {
                 NextLine();
             }
             else
             {
                 StopAllCoroutines();
-                textMesh.text = lines[index];
+                textMesh.text = dialouge[index];
             }
         }
     }
-    private void StartDialouge()
+    public void AlmostStartDialouge()
     {
+        StartDialouge();
+    }
+    public void StartDialouge()
+    {
+        transform.localScale =  new Vector3(2.4125f, 1, 1);
         index = 0;
         StartCoroutine(TypeLine());
+        print(dialouge);
+        print(speaker);
     }
 
     IEnumerator TypeLine()
     {
-        foreach (var c in lines[index].ToCharArray())
+        foreach (var c in dialouge[index].ToCharArray())
         {
             audio.PlayOneShot(sans);
             textMesh.text += c;
@@ -60,7 +84,7 @@ public class NewDialouge : MonoBehaviour
 
     void NextLine()
     {
-        if (index < lines.Length - 1)
+        if (index < dialouge.Length - 1)
         {
             index++;
             textMesh.text = string.Empty;
@@ -68,7 +92,7 @@ public class NewDialouge : MonoBehaviour
         }
         else
         {
-            gameObject.SetActive(false);
+            transform.localScale = new Vector3(0, 0, 0);
         }
     }
 }
