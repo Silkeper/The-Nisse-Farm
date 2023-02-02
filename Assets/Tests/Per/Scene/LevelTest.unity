@@ -591,6 +591,7 @@ GameObject:
   m_Component:
   - component: {fileID: 75315654}
   - component: {fileID: 75315655}
+  - component: {fileID: 75315656}
   m_Layer: 0
   m_Name: Chiken
   m_TagString: Untagged
@@ -665,6 +666,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &75315656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 75315653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 946714a5825b2cf46b9f8e350f06c69d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Navn:
+  - 
+  Dialog: []
 --- !u!1 &88448415
 GameObject:
   m_ObjectHideFlags: 0
@@ -11694,6 +11710,7 @@ GameObject:
   m_Component:
   - component: {fileID: 624274727}
   - component: {fileID: 624274728}
+  - component: {fileID: 624274729}
   m_Layer: 0
   m_Name: Doggo
   m_TagString: Untagged
@@ -11768,6 +11785,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &624274729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624274726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 946714a5825b2cf46b9f8e350f06c69d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Navn:
+  - Rasmus
+  Dialog:
+  - "Woff. (halla, hvor er du p\xE5 spekteret... Det politiske spekteret))"
 --- !u!1 &680807744
 GameObject:
   m_ObjectHideFlags: 0
@@ -18288,6 +18321,7 @@ GameObject:
   m_Component:
   - component: {fileID: 953758503}
   - component: {fileID: 953758504}
+  - component: {fileID: 953758505}
   m_Layer: 0
   m_Name: gyngestolgubbe
   m_TagString: Untagged
@@ -18362,6 +18396,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &953758505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 953758502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 946714a5825b2cf46b9f8e350f06c69d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Navn:
+  - Gubben
+  Dialog:
+  - '*grynt*'
 --- !u!1 &974420585
 GameObject:
   m_ObjectHideFlags: 0
@@ -18456,6 +18506,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1030450234}
   - component: {fileID: 1030450233}
+  - component: {fileID: 1030450235}
   m_Layer: 0
   m_Name: Budeie
   m_TagString: Untagged
@@ -18530,6 +18581,22 @@ Transform:
   m_Father: {fileID: 812330389}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1030450235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1030450232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 946714a5825b2cf46b9f8e350f06c69d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Navn:
+  - Budeie
+  Dialog:
+  - "V\xE6r hilset, fremmed!"
 --- !u!1 &1214977791
 GameObject:
   m_ObjectHideFlags: 0
@@ -18876,6 +18943,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1350121355}
   - component: {fileID: 1350121356}
+  - component: {fileID: 1350121357}
   m_Layer: 0
   m_Name: "B\xE6"
   m_TagString: Untagged
@@ -18950,6 +19018,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1350121357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1350121354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 946714a5825b2cf46b9f8e350f06c69d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Navn:
+  - Sau?
+  Dialog:
+  - Psst, hei du..!
 --- !u!1 &1364538815
 GameObject:
   m_ObjectHideFlags: 0
@@ -24316,6 +24400,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1370992165}
   - component: {fileID: 1370992166}
+  - component: {fileID: 1370992167}
   m_Layer: 0
   m_Name: Gjetergutt - Copy
   m_TagString: Untagged
@@ -24390,6 +24475,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1370992167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1370992164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 946714a5825b2cf46b9f8e350f06c69d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Navn:
+  - Gjetergutt
+  Dialog:
+  - Jihu!
 --- !u!1 &1409608357
 GameObject:
   m_ObjectHideFlags: 0
@@ -24400,6 +24501,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1409608359}
   - component: {fileID: 1409608358}
+  - component: {fileID: 1409608360}
   m_Layer: 0
   m_Name: Protagonist-armer-nede
   m_TagString: Untagged
@@ -24474,6 +24576,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1409608360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1409608357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 946714a5825b2cf46b9f8e350f06c69d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Navn:
+  - Frans
+  Dialog:
+  - Hei, jeg heter Frans!
+  - Hva heter du?
 --- !u!1 &1431293084
 GameObject:
   m_ObjectHideFlags: 0
