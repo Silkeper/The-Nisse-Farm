@@ -626,11 +626,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 946714a5825b2cf46b9f8e350f06c69d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Navn: 
+  Navn: Gjetergutt
   Dialog:
   - "JIHUU! S\xE5 rask du er! Dette vil Budeia like."
   - "Tipp topp! Juhu! F\xF8lg meg, s\xE5 skal vi fiske! "
-  Lyd: {fileID: 8300000, guid: 29234139943a647f5a2a16ab9035ba03, type: 3}
+  Lyd: {fileID: 8300000, guid: 775a493425c1b4472a8fe2de2aff2b60, type: 3}
 --- !u!212 &24564338
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -35692,10 +35692,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 946714a5825b2cf46b9f8e350f06c69d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Navn: 
+  Navn: Hund
   Dialog:
   - Woofwoof!
-  Lyd: {fileID: 8300000, guid: 168c2dd7b2a674f06bdc3cb4bdd21510, type: 3}
+  Lyd: {fileID: 8300000, guid: 01c23b383470b436a89b595156e4e48f, type: 3}
 --- !u!1 &645391026
 GameObject:
   m_ObjectHideFlags: 0
@@ -35741,7 +35741,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 946714a5825b2cf46b9f8e350f06c69d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Navn: 
+  Navn: Gartneren
   Dialog:
   - "Nei, j\xF8ss! Ungt blod p\xE5 tunet? "
   - "Hyggelig \xE5 hilse p\xE5 deg! Kall meg Gisle. Men nok sm\xE5prat, det f\xE5r
@@ -35751,7 +35751,7 @@ MonoBehaviour:
     f\xF8r, eller skal jeg l\xE6re deg? "
   - "Det er s\xE5re enkelt. Du plukker opp kjeppen og kaster den p\xE5 jalape\xF1o\u2019n.
     Dette f\xE5rru til!:)"
-  Lyd: {fileID: 8300000, guid: d24db81c3064b4b8d880df2322a48e72, type: 3}
+  Lyd: {fileID: 8300000, guid: d083b5bc59e8f4572b3c1a5b2672b5a7, type: 3}
 --- !u!212 &645391029
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -39458,10 +39458,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 946714a5825b2cf46b9f8e350f06c69d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Navn: 
+  Navn: Budeie
   Dialog:
   - "Du er en kl\xF8pper en, du!"
-  Lyd: {fileID: 8300000, guid: 8c6bfc2d209da4549b65afc8429c5c5a, type: 3}
+  Lyd: {fileID: 8300000, guid: 23bd480cfeb7049b2af8ebd2121375e4, type: 3}
 --- !u!212 &880094861
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -42905,10 +42905,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 946714a5825b2cf46b9f8e350f06c69d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Navn: 
+  Navn: Gubbe
   Dialog:
   - '*grynt*'
-  Lyd: {fileID: 8300000, guid: 61bb6b95d65634e7cbf43b518cc07ba6, type: 3}
+  Lyd: {fileID: 8300000, guid: de595f6b897324f669a9c3d785d31ce0, type: 3}
 --- !u!1 &974420585
 GameObject:
   m_ObjectHideFlags: 0
@@ -43135,7 +43135,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 946714a5825b2cf46b9f8e350f06c69d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Navn: 
+  Navn: Budeie
   Dialog:
   - "Heisann, din pjokk! Du er sein, men det g\xE5r s\xE5 fint s\xE5! Mitt namn er
     Brita, jeg er budeien her til gards. ja.. alts\xE5 sjefen. "
@@ -43161,7 +43161,7 @@ MonoBehaviour:
     stort som foreg\xE5r der borte.. "
   - "G\xE5 og legg frar\xE6 i hytta du, s\xE5 skal du straks f\xE5 begynne p\xE5
     arbetet. "
-  Lyd: {fileID: 8300000, guid: 2449891800ca949d28b9e44dac8f8663, type: 3}
+  Lyd: {fileID: 8300000, guid: 4cfb15d11849f4119bacaa0b9d4da2c0, type: 3}
 --- !u!1 &1108800133
 GameObject:
   m_ObjectHideFlags: 0
@@ -43272,6 +43272,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1214977792}
   - component: {fileID: 1214977793}
+  - component: {fileID: 1214977794}
   m_Layer: 6
   m_Name: Gjetergutt 1
   m_TagString: Untagged
@@ -43346,6 +43347,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1214977794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1214977791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 946714a5825b2cf46b9f8e350f06c69d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Navn: Nissegutt
+  Dialog:
+  - Jihu..!
+  Lyd: {fileID: 8300000, guid: 775a493425c1b4472a8fe2de2aff2b60, type: 3}
 --- !u!1 &1220871933
 GameObject:
   m_ObjectHideFlags: 0
@@ -43356,6 +43373,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1220871934}
   - component: {fileID: 1220871935}
+  - component: {fileID: 1220871936}
   m_Layer: 3
   m_Name: painting
   m_TagString: Untagged
@@ -43430,6 +43448,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1220871936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1220871933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 946714a5825b2cf46b9f8e350f06c69d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Navn: Nisser
+  Dialog:
+  - '*onde ord*'
+  Lyd: {fileID: 8300000, guid: 1c81920b080aa4ee2a060f380a030f68, type: 3}
 --- !u!1 &1236913793
 GameObject:
   m_ObjectHideFlags: 0
@@ -43882,7 +43916,7 @@ MonoBehaviour:
   Navn: 
   Dialog:
   - Psst, hei du..!
-  Lyd: {fileID: 8300000, guid: c75fd098fe603468ab6bffb76cc0b962, type: 3}
+  Lyd: {fileID: 8300000, guid: ee6d1571fe3984a5c822a229e91e1dfa, type: 3}
 --- !u!1 &1364538815
 GameObject:
   m_ObjectHideFlags: 0
@@ -49336,14 +49370,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 946714a5825b2cf46b9f8e350f06c69d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Navn: 
+  Navn: Gjetergutt
   Dialog:
   - Jihu!
   - "Hva st\xE5r du her som en evneveik for? Tror du g\xE5rden steller seg selv! "
   - "Uansett hva du tror, m\xE5 du legge inn en innsats om du skal overleve her!"
   - "Ta en tur til gartneren, du, s\xE5 skal du f\xE5 gj\xF8re din f\xF8rste oppgave
     her p\xE5 g\xE5rd\u2019n! Jihu! "
-  Lyd: {fileID: 8300000, guid: 29234139943a647f5a2a16ab9035ba03, type: 3}
+  Lyd: {fileID: 8300000, guid: 775a493425c1b4472a8fe2de2aff2b60, type: 3}
 --- !u!1 &1373485915
 GameObject:
   m_ObjectHideFlags: 0
@@ -130797,10 +130831,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 946714a5825b2cf46b9f8e350f06c69d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Navn: 
+  Navn: Gartneren
   Dialog:
   - 'Takk for hjelpen, det trengte jeg!  '
-  Lyd: {fileID: 8300000, guid: bd298c2c858f54402826f8a4442f3e7a, type: 3}
+  Lyd: {fileID: 8300000, guid: 7603224809a794fdd816e14cf421db97, type: 3}
 --- !u!212 &1816685221
 SpriteRenderer:
   m_ObjectHideFlags: 0
